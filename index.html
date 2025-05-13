@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>DESCUBRIENDO IA</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #1b2735, #090a0f);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #ffffff;
+      margin: 0;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    #splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(#00f0ff, #001f3f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 1000;
+      color: white;
+      font-size: 3em;
+      text-shadow: 0 0 20px #fff;
+      animation: fadeOut 1s ease-in-out forwards;
+      animation-delay: 2.5s;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+      color: #00ffff;
+      text-shadow: 2px 2px 10px #00ffff;
+    }
+
+    body.dark-mode h1 {
+      color: #004d4d;
+      text-shadow: none;
+    }
+
+    p {
+      font-size: 1.4em;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 800px;
+      color: #ffffff;
+    }
+
+    body.dark-mode p {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: #000000;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      margin-top: 50px;
+      color: #ffcc00;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    body.dark-mode h2 {
+      color: #cc6600;
+      text-shadow: none;
+    }
+
+    .seccion {
+      margin-top: 40px;
+    }
+
+    .botones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    iframe {
+      width: 90%;
+      height: 400px;
+      border-radius: 15px;
+      margin: 30px auto;
+      display: block;
+      border: 2px solid #ffffff;
+      background-color: #000;
+    }
+
+    body.dark-mode iframe {
+      border: 2px solid #000000;
+      background-color: #ffffff;
+    }
+
+    .controls {
+      margin-top: 40px;
+    }
+
+    button {
+      background-color: #222;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    body.dark-mode button {
+      background-color: #ddd;
+      color: #222;
+      border: 2px solid #222;
+      box-shadow: none;
+    }
+
+    .video-container {
+      width: 300px;
+      margin: 20px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .video-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffff;
+      transition: transform 0.3s;
+    }
+
+    .video-container img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div id="splash">
+    🚀 Bienvenido a <strong>DESCUBRIENDO IA</strong> 👾
+  </div>
+
+  <h1>🤖 DESCUBRIENDO IA 👾</h1>
+  <p>✨ ¡Hola chicos y chicas! Bienvenidos a un mundo donde los robots pueden pensar, los juegos te hacen más inteligente y los videos te enseñan cómo funciona la inteligencia artificial. 🌟 ¿Estás listo para aprender y divertirte al mismo tiempo? 🚀💡</p>
+
+  <div class="seccion">
+    <h2>📺 Videos Galácticos</h2>
+    <p>🎥 Mira estos videos llenos de luces, ciencia y sorpresas. La inteligencia artificial puede reconocer rostros, hablar como los humanos y ¡hasta ayudarte a hacer tareas! 🧠💬</p>
+    <div class="botones">
+      <div class="video-container">
+        <a href="https://youtu.be/UKncFg0PyEk" target="_blank"><img src="https://img.youtube.com/vi/UKncFg0PyEk/0.jpg" alt="Video 1"></a>
+      </div>
+      <div class="video-container">
+        <a href="https://youtu.be/WCfeu-fEht4" target="_blank"><img src="https://img.youtube.com/vi/WCfeu-fEht4/0.jpg" alt="Video 2"></a>
+      </div>
+      <div class="video-container">
+        <a href="https://youtu.be/gYGi9iDbHtM" target="_blank"><img src="https://img.youtube.com/vi/gYGi9iDbHtM/0.jpg" alt="Video 3"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <h2>🎮 Juegos Espaciales</h2>
+    <p>🌈 ¿Quieres aprender jugando? Estos juegos te llevarán a viajar entre planetas de datos y estrellas de conocimiento. ¡Desafía tu mente y diviértete como nunca! 🌌🛸</p>
+    <div class="botones">
+      <a href="https://es.educaplay.com/recursos-educativos/23665646-quiz_sobre_ia.html" target="_blank"><button>🕹️ Jugar Juego 1</button></a>
+      <a href="https://quizizz.com/admin/quiz/681961c6e12347b6ea3a3373" target="_blank"><button>🕹️ Jugar Juego 2</button></a>
+      <a href="https://view.genially.com/67e35c82e8b1b49c2ba4d71c/interactive-content-artificial" target="_blank"><button>🕹️ Jugar Juego 3</button></a>
+    </div>
+  </div>
+
+  <div class="seccion">
+    <h2>📋 Encuesta para Docentes</h2>
+    <p>👩‍🏫 ¿Eres docente? Queremos saber cómo podemos mejorar este espacio educativo para niños y niñas. ¡Tu opinión es muy importante! 💬🧑‍🏫</p>
+    <div class="botones">
+      <a class="boton-animado" href="https://docs.google.com/forms/d/e/1FAIpQLScmDK4Oj8_xhmNzFGPBQm7NoIlJeYpVf-DZh5_sZbd4Q_eysw/viewform?usp=sharing" target="_blank"><button>📝 Responder Encuesta</button></a>
+    </div>
+  </div>
+
+  <div id="contentContainer"></div>
+
+  <div class="controls">
+    <button onclick="toggleDarkMode()">🌗 Modo Oscuro / Claro</button>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+    // Ocultar animación de inicio después de 3s
+    window.addEventListener("load", function() {
+      setTimeout(() => {
+        document.getElementById("splash").style.display = "none";
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
